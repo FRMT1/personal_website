@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/aprendizaje.html",
+    "items": []
+  },
+  {
+    "listing": "/diseño.html",
+    "items": []
+  },
+  {
     "listing": "/fundamentos.html",
     "items": [
       "/fundamentos/bucles_y_condicionales.html",
@@ -8,7 +16,7 @@
     ]
   },
   {
-    "listing": "/aprendizaje.html",
+    "listing": "/control.html",
     "items": []
   },
   {
@@ -18,13 +26,5 @@
       "/blog/mucina.html",
       "/blog/desechos.html"
     ]
-  },
-  {
-    "listing": "/control.html",
-    "items": []
-  },
-  {
-    "listing": "/diseño.html",
-    "items": []
   }
 ]

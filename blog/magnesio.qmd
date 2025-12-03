@@ -9,10 +9,9 @@ format:
     css: styles.css
 ---
 
-
 ## Memoria y aprendizaje {#principio}
 
-La fortaleza de las conexiones sinápticas, está ampliamente asociada con la función cerebral de la memoria, y algunas investigaciones también la asocian con la capacidad de aprendizaje. Sin embargo, la habilidad cerebral para almacenar nueva información, parece estar correlacionada con la plasticidad de las conexiones neuronales y el número de  conexiones disponibles.
+La fortaleza de las conexiones sinápticas, está ampliamente asociada con la función cerebral de la memoria, y algunas investigaciones también la asocian con la capacidad de aprendizaje. Sin embargo, la habilidad cerebral para almacenar nueva información, parece estar correlacionada con la plasticidad de las conexiones neuronales y el número de conexiones disponibles.
 
 Por lo tanto, debe existir un número crítico de conexiones para que tenga lugar las funciones cerebrales de memoria y aprendizaje. De hecho, en experimentos con animales se ha demostrado la correlación entre la disminución de conexiones neuronales y la disminución de la memoria asociada al envejecimiento.
 
@@ -25,7 +24,6 @@ El Magnesio ($Mg^{2+}$) es el cuarto ión más abundante en el cuerpo humano y a
 ```{r echo=FALSE, fig.align='center'}
 knitr::include_graphics("imagenes/Mg.png")
 ```
-
 
 En el cerebro, una de las funciones fundamentales del $Mg^{2+}$, es la regulación de los receptores NMDA (NMDAR) localizados en las terminaciones sinápticas, donde desempeñan su función como moduladores del potencial excitatorio postsináptico. Estos receptores son **voltaje-dependientes** y el $Mg^{2+}$ controla su apertura, lo cual resulta esencial para la plasticidad neuronal. Los estudios *in vitro* demuestran que el $Mg^{2+}$ es un **regulador positivo** de la plasticidad neuronal; es decir, el incremento en la concentración de Magnesio en el fluido extracelular $[Mg^{2+}]_o$, dentro de un rango fisiológico, se relaciona con el aumento de la plasticidad neuronal en cultivos neuronales provenientes del hipocampo.
 
@@ -41,16 +39,15 @@ El MgT es una estructura química que aumenta la biodisponibilidad del Magnesio,
 knitr::include_graphics("imagenes/treonato_magnesio.png")
 ```
 
-
 A nivel celular, la elevación de los niveles de $Mg^{2+}$ en el cerebro, secundarios a la administración crónica de MgT, se relaciona con la reconfiguración de las redes sinápticas en animales, pasando de pocas conexiones con alta probabilidad de desconexión, a numerosas conexiones de baja probabilidad de desconexión.
 
-Puede especularse que estas modificaciones  en la neuroquímica a partir de la dieta y la suplementación oral con MgT, pudieran tener un efecto positivo en las funciones cerebrales de la memoria y el aprendizaje; aunque se requiere más investigación al respecto.
+Puede especularse que estas modificaciones en la neuroquímica a partir de la dieta y la suplementación oral con MgT, pudieran tener un efecto positivo en las funciones cerebrales de la memoria y el aprendizaje; aunque se requiere más investigación al respecto.
 
 A través de la dieta, las principales fuentes de $Mg^{2+}$ son los cereales fortificados, legumbres, vegetales de hojas verdes como la espinaca, la leche y el yogurt. Las cantidades recomendadas por día, en miligramos (mg), son: 310-320 mg en mujeres y 400-420 mg en hombres. de acuerdo a las [*Recommended Dietary Allowanses (RDA)*](https://search.usa.gov/search?affiliate=nih-ods&query=magnesium)
 
 # Lectura complementaria
 
-* Inna S., Nashat A., Long-Jun W., Chao H., Ling Z., Bo L., Xiang Z., Arvind G., Ming-Gao Z., Min Z., Susumo T., Guosong L. Enhancement of Learning and Memory by Elevating Brain Magnesium. *Neuron* (2010). N°65. Pp., 165-177.
+-   Inna S., Nashat A., Long-Jun W., Chao H., Ling Z., Bo L., Xiang Z., Arvind G., Ming-Gao Z., Min Z., Susumo T., Guosong L. Enhancement of Learning and Memory by Elevating Brain Magnesium. *Neuron* (2010). N°65. Pp., 165-177.
 
 <br>
 
@@ -72,5 +69,3 @@ a(
   )
 )
 ```
-
-
