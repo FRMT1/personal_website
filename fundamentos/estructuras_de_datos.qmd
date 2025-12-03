@@ -1,0 +1,308 @@
+---
+title: "Estructuras de datos"
+author: Félix Millán
+date: 2025-12-02
+categories: ["Tipos de datos","Visualización"]
+description: "Esta publicación es una revisión de las principales estructuras de datos en el lenguaje de programación R: vectores, factores, matrices y tablas de datos."
+code-fold: true
+toc: true
+toc-location: left
+format: 
+  html: 
+    css: styles.css
+---
+
+## Introducción
+
+Antes de empezar, lo primero que debemos hacer es instalar el [software R](https://www.r-project.org/). En el enlace anterior, podemos descargar la última versión para nuestro sistema operativo (Linux, Windows o Mac), y luego instalarlo en el computador.
+
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics("imagenes/Rlogo.png")
+```
+
+```{r include=FALSE, warning=FALSE, message=FALSE}
+library(fontawesome)
+```
+
+Como pueden ver en el enlace, `r fa(name = "r-project", fill = "steelblue")` es un programa de estadística computacional y a la vez un proyecto de softwware libre conformado por una gran comunidad a nivel mundial. Sus orígenes se remontan a 1993, cuando dos profesores de la universidad de Auckland: Ross ihaka y Robert Gentleman desarrollaron lo que sería una versión inicial de un software libre análogo al lenguaje S. Actualmente, es uno de lenguajes de programación más utilizados por la comunidad científica mundial, para la visualización, análisis de datos y aprendizaje automático.
+
+::: {style="text-align: center;"}
+<iframe width="560" height="400" src="https://www.youtube.com/embed/XcBLEVknqvY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
+:::
+
+Luego de instalar el programa, debemos descargar un editor de código o un ambiente de desarrollo integrado (IDE por sus siglas en inglés), lo cual facilita considerablemente el desarrollo de proyectos en R. La IDE más utilizada -y es realmente buena- es Rstudio, la cual pueden descargar e instalar en el siguiente enlace: [Rstudio](https://posit.co/download/rstudio-desktop/), para el sistema operativo que corresponda.
+
+Ahora sí, veamos las principales estructuras de datos en R:
+
+## Vectores
+
+Se pueden construir vectores numéricos o de caracteres. Para ello, debemos conocer que el signo de igualdad se escribe como **\<-** y que se debe utilizar la función de concatenación **c**, para indicarle al programa que todos los elementos entre **()** pertenecen a un mismo objeto. El uso de **\#** se utiliza para introducir comentarios que no forman parte del código:
+
+```{r}
+x <- c(3,7,4,3,7,9) # Vector numérico
+x
+# Vector de caracteres
+names <- c("Pedro", "Pablo", "María", "José", "Rafael")
+names
+```
+
+También se puede concatenar dos vectores:
+
+```{r}
+# Concatenación de vectores numéricos
+a <- c(1,2,3)
+b <- c(4,5)
+c(a,b)
+
+# Concatenación de vectores de caracteres
+ladies <- c("María", "Linda")
+gentlemen <- c("Jośe", "Félix")
+c(ladies,gentlemen)
+```
+
+Dado un vector cualquiera, podemos extraer ciertos elementos. En el siguiente ejemplo, se extraerá el primer y segundo elemneto del vector. Esa es la función del signo negativo en el siguiente código:
+
+```{r}
+y <- c(1,2,3,4,5,6)
+y[-c(1,2)]
+```
+
+También podríamos almacenar el resultado anterior en un nuevo objeto para su uso posterior:
+
+```{r}
+y <- c(1,2,3,4,5,6)
+m <- y[-c(1,2)]
+m
+```
+
+Si se estrae un solo elemento, supongamos, el primero; escribimos simplemente:
+
+```{r}
+y[-1]
+```
+
+También se pueden crear vectores a partir de variables. Supongamos tres variables: x, y, z. Podemos crear un vector b que sea la combinación de las variables anteriores:
+
+```{r}
+x <- c(1,2,3)
+y <- c(4,5,6)
+z <- c(7,8,9,10)
+b <- c(x,y,z)
+b
+```
+
+También se pueden crear vectores que respondan a un patrón con las funciones **seq** y **rep**
+
+```{r}
+x <- seq(1:10)
+x
+y <- seq(1,5,0.5)
+y
+```
+
+Nótese que en el segundo ejemplo se especificó la secuencia de números del 1 al 5 a intervalos de 0.5. veamos ahora el uso de la función **rep**:
+
+```{r}
+rep(7,3)
+rep(3:4,2)
+rep(1:3,c(1,2,3))
+```
+
+Se lee:
+
+-   Repite el 7 tres veces
+-   Repite la secuencia del 3 al 4, dos veces
+-   Repite el 1, una vez, el 2, dos veces y el 3, tres veces
+
+En los vectores también pueden existir valores faltantes NA (\*not available), en cuyo caso, podemos estar interesados en identificarlos o removerlos. Veamos algunos ejemplos:
+
+```{r}
+x <- c(1,2,3,NA,4,5)
+x
+# Identificación de valores faltantes
+is.na(x)
+# Selección de los valores no faltantes
+x1 <- x[!is.na(x)]
+x1
+```
+
+Nótese que en el último código se removieron los valores no disponibles del vector x y la información se almacenó en un nuevo vector llamado x1.
+
+Con los vectores también podemos efectuar operaciones aritméticas
+
+```{r}
+a <- c(1,2,3)
+b <- c(4,5,6)
+# Suma
+a+b
+# Resta
+a-b
+# multiplicación
+a*b
+# División
+a/b
+# Potenciación
+b^2
+b**2
+identical(b^2,b**2)
+```
+
+Observen el la última línea que la potencia de un número puede escribirse como **b\^2** o como b\*\*2
+
+La definición de vectores permite la construcción de gráficos básicos con la función **plot**, la cual tiene varios argumentos. En el siguiente ejemplo solo utilizaremos los argumentos; *main*, *xlab*, *ylab*, *type* y *col*.
+
+```{r fig.align='center',fig.height= 4}
+x <- seq(-pi,pi,0.1)
+y <- sin(x)
+plot(y~x, xlab = "X", ylab = "Seno de X", 
+     main= "Gráfico a partir de vectores",
+     type = "o", col = "darkblue")
+```
+
+## Factores
+
+Los factores son estructuras que se utilizan para realizar una clasificación discreta de otros vectores de la misma longitud. Supongamos que se le pregunta a 10 personas que asisten a un evento, su país de origen. Esta información pudiera guardarse como un vector de la siguiente manera:
+
+```{r}
+pais.origen <- c("Argentina","Perú","Venezuela","Japón","Perú",
+                 "Argentina","Japón","Venezuela","Benín",
+                 "México")
+pais.origen
+```
+
+El mismo vector, guardado como factor:
+
+```{r}
+pais.origen <- as.factor(pais.origen)
+pais.origen
+# Sus niveles o categorías
+levels(pais.origen)
+# El resumen de cada categoría
+summary(pais.origen)
+```
+
+Este tipo de estructura es muy útil cuando se trabaja con diseño de experimentos, por ejemplo. El factor también puede estar ordenado, en cuyo caso se utiliza la función **ordered**. Un ejemplo:
+
+```{r}
+tratamientos <- factor(c(1,3,4,2,1,4,2,2,1,1,1,3,3,4))
+tratamientos <- ordered(tratamientos)
+tratamientos
+```
+
+## Matrices
+
+Para la construcción de matrices en R, se utilizan las funciones **ncol**, **nrow**, **matrix** y **byrow**. Lo primero que se debe hacer es crear el vector de datos que conformarán la matriz. Supongamos que se desea construir una matriz *3x3* con los siguientes datos: $1,2,3,4,5,6,7,8,9$
+
+```{r}
+data <- c(1,2,3,4,5,6,7,8,9)
+# Matriz 1
+M1 <- matrix(data, ncol = 3, byrow = TRUE)
+M1
+# Matriz 2
+M2 <- matrix(data,ncol = 3,byrow = FALSE)
+M2
+# Matriz 3
+data <- c(1,2,3,4,5,6)
+M3 <- matrix(data,nrow = 3,byrow = TRUE)
+M3
+```
+
+A partir de las matrices que se han construido, se puede calcular la matriz traspuesta y la matriz inversa, con las funciones **t** y **solve** respectivamente, de gran utilidad en el cálculo de predictores $\beta_i$ en modelos matemáticos:
+
+$$
+\beta_i=(X'X)^{-1}X'Y
+$$
+
+Un ejemplo de matriz traspuesta:
+
+```{r}
+# Matriz traspuesta de M1
+traspuesta.M1 <- t(M1)
+traspuesta.M1
+
+```
+
+Un ejemplo de matriz inversa:
+
+```{r}
+data <- c(6,4,3,5,1,3,5,7,8,2,3,5,4,6,2,7)
+matriz <- matrix(data,nrow = 4,byrow = TRUE)
+matriz
+ # Matriz inversa
+matriz.inversa <- solve(matriz)
+matriz.inversa
+```
+
+A partir de una matriz, se pueden desarrollar las operaciones aritméticas fundamentales. Caso especial es la multiplicación, ya que si se desea multiplicar una matriz **A** por un escalar, se escribe $escalar*A$, en tanto que si se desea realizar una multiplicación matricial, la notación utilizada es %\*%:
+
+```{r}
+A <- matrix(data = c(1,2,3,4), nrow = 2, byrow = TRUE)
+A
+B <- matrix(data = c(1,2,3,4), nrow = 2, byrow = FALSE)
+B
+
+# Multiplicación matricial
+
+C <- A%*%B
+C
+```
+
+## Tablas de datos (*data frames*)
+
+Los *dataframes* son una generalización del concepto de matriz. La regla de oro de los *data frames* es que las variables están dispuestas en columnas y las observaciones en filas. A su vez, las columnas pueden ser distintas estructuras de datos: vectores (numéricos o de caracteres) y factores, pero todos los datos contenidos en una misma columna, deben ser del mismo tipo. veamos con un ejemplo:
+
+```{r}
+estudiantes <- c("María","Juan","Carlos","Rafael","Emilia",
+                 "Ana","Francisco","Vanessa")
+sexo <- factor(c("F","M","M","M","F","F","M","F"))
+talla <- c(1.55,1.60,1.70,1.65,1.53,1.58,1.72,1.64)
+datos <- data.frame(estudiantes, sexo,talla)
+datos
+```
+
+Si por ejemplo se desea conocer la talla promedio y la desviación estándar de todos los estudiantes, se podría utilizar las funciones **mean** y **sd**:
+
+```{r}
+# Promedio de la talla
+mean(datos[,3])
+
+# Desviación estándar de la talla
+sd(datos[,3])
+```
+
+La notación **datos\[,3\]** significa que del *data frame* datos, se está considerando para el cálculo todas las filas de la columna 3 exclusivamente.
+
+Sin embargo, casi siempre interesa conocer la información contenida en sub.grupos que integran el *data frame*, como por ejemplo la talla promedio de los hombres y de las mujeres del grupo. Para ello, es muy útil el uso de la función **tapply**:
+
+```{r}
+# Uso de tapply
+
+tapply(datos$talla,datos$sexo,mean)
+```
+
+En un próximo tutorial trataremos la biblioteca **dplyr**, la cual permite explorar todas las posibilidades de manipulación de un *data frame*.
+
+<br>
+
+```{r echo=FALSE}
+library(htmltools)
+
+a(
+  'Volver al principio',
+  href = '#principio',
+  style = css(
+    font_size = '18px',
+    font_family = 'Playfair Display',
+    color = 'white',
+    background = '#003049',
+    display = 'inline-block',
+    padding = '10px',
+    border_radius = '5px',
+    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
+  )
+)
+```
+
+<br>

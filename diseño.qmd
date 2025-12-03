@@ -1,0 +1,6 @@
+---
+title: "Diseño experimental"
+listing: 
+  contents: diseño
+  categories: true
+---

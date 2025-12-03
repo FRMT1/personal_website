@@ -1,0 +1,6 @@
+---
+title: "Aprendizaje automático"
+listing: 
+  contents: aprendizaje
+  categories: true
+---

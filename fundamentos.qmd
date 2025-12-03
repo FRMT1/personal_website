@@ -1,0 +1,6 @@
+---
+title: "Fundamentos de R"
+listing:
+  contents: fundamentos
+  categories: true
+---

@@ -1,0 +1,77 @@
+---
+title: "Mucina: fuente endógena de fibra"
+author: Félix Millán
+date: 2025-12-03
+categories: ["Intestino","Microbioma","Mucina","Ácido butírico"]
+description: "Esta publicación hace referencia a la función de la mucina como fibra endógena, en situaciones de ayuno, y su rol en la síntesis de ácido butírico."
+format: 
+  html: 
+    css: styles.css
+---
+
+## Mucina {#principio}
+
+La *Mucina* es la secreción mucosa producida por las células *Globet* del epitelio intestinal y el estómago, así como por las glándulas salivales. Está conformada principalmente por glucoproteínas que poseen en su estructura molecular *O*-Glucanos. Estos son polísacáridos ramificados compuestos principalmente por *N*-Acetilglucosamina, *N*-acetilgalactosamina (GlcNAc), galactosa y restos de fucosa, ácido siálico y carbohidratos azufrados.
+
+Se han identificado dos aspectos de importancia fisiológica con respecto a la Mucina: en primer lugar, actúa como barrera protectora del epitelio intestinal y gástrico; en segundo lugar, es un factor determinante de la homeostasis entre el huésped y la microbiota intestinal. Si bien la Mucina es resistente al proceso digestivo en el intestino delgado, bajo condiciones de ayuno, puede ser utilizada parcialmente como sustrato de fermentación en el colon.
+
+Es conocido que las dietas ricas en fibra dietética y almidones resistentes, promueven la fermentación microbiana en el intestino y la síntesis de ácidos grasos de cadena corta (SCFAs por sus siglas en inglés). Estos ácidos promueven una variedad de funciones fisiológicas: pueden actuar como fuente de energía en las células del intestino, activan directamente los receptores celulares de proteína G (GPCRs), regulan la expresión de citoquinas en las células T y contribuyen a su regulación.
+
+En animales de experimentación, se ha encontrado la presencia de SCFAs en concentraciones entre 30-60 mM, en ratas alimentadas con dietas ricas en fibra, así como en animales alimentados con dietas libres de fibra dietaria. Estos resultados han sido corroborados en estudios con seres humanos sometidos a ayuno voluntario durante cortos periodos de tiempo. Esto sugiere que los *O*-Glucanos de la Mucina constituyen una fuente de fibra endógena y una alternativa metabólica ante la ausencia de carbohidratos no digeribles de la dieta.
+
+La evidencia científica indica que ante condiciones de ayuno moderado, los *O*-Glucanos de la Mucina promueven cambios en las poblaciones microbianas del microbioma intestinal humano, favoreciendo la presencia de especies del género *Lachnospiraceae*, *Bacteroides thetaiotaomicron* y *Akkermancia muciniphila*. Estos microorganismos sintetizan una variedad de enzimas involucradas en la hidrólisis de los *O*-Glucanos de la Mucina. Especies bacterianas como *Anaerotruncus colihominis* y otras especies, también poseen los mecanismos enzimáticos capaces de utilizar la Mucina como sustrato energético. Microorganismos como *R faecis* y otras especies identificadas en humanos y animales, son productoras de ácido butírico (SCFAs) a partir de los *O*-Glucanos. Estos datos indican que , bajo condiciones de ayuno moderado, la utilización metabólica de la Mucina, requiere la conformación de un consorcio bacteriano muy diverso.
+
+Los SCFAs: acetato, propionato y butirato están constituidos por 4-6 átomos de carbono y son la principal fuente de combustible de la mucosa del colon e impactan de manera positiva la circulación mesentérica y la motilidad intestinal. Su ausencia está asociada con la atrofia de la mucosa colónica y la disminución de la inmunidad intestinal. A continuación se muestra la estructura química empírica y el modelo tridimensional del ácido butírico:
+
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics("imagenes/abutirico.png")
+```
+
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics("imagenes/butirato3D.png")
+```
+
+La biosíntesis de los SCFAs por las especies microbianas citadas con anterioridad, se produce por la ruta metabólica Embden-Meyerof de la glucólisis anaerobia.
+
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics("imagenes/butirato.png")
+```
+
+La importancia de estos cambios en el microbioma intestinal, inducidos por periodos intermitentes de ayuno, radica en la producción de SCFAs y su influencia en la actividad inmunológica del cuerpo humano, tanto en la preservación de la inmunidad intestinal como en la participación en el eje intestino-cerebro, como agente neuroquímico involucrado en los mecanismos de regulación del apetito. Además de contribuir a regular la actividad celular de los Linfocitos T, los ácidos grasos de cadena corta y especialmente el Butirato, aceleran el metabolismo de los Linfocitos B y regulan la expresión genética que promueve la diferenciación de estas células.
+
+::: {style="style"}
+<div style="text-align: center;">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UY_kRJqpUWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+:::
+
+## Lectura complementaria
+
+-   Hino S., Mizushima T., Kaneko K., Kawai E., Kondo T., Genda T., Yamada T., Hase K., Nishimura N., Morita T. Mucin-Derived *O*-Glycans Act as Endogenous Fiber and Sustain Mucosal Immune Homeostasis Via Short-Chain Fatty Acid Production in Rat Cecum. *Journal of Nutrition* (2020);150:2656-2665.
+
+-   Reilly K.J., Rombeau J.L. Metabolism and potencial clinical applications of short-chain fatty acids. *Clinical Nutrition* (1993); 12 (Suppl 1): S97-S105.
+
+-   Su J., Wang Y., Zhang X., Ma M., Xie Z., Pan Q., Ma Z., Peppelenbosch M.P. Remodeling of the gut microbiome during Ramadam-associated intermittent fasting. *American Journal of Clinical Nutrition* (2021);113:1332-1342.
+
+<br>
+
+```{r echo=FALSE}
+library(htmltools)
+
+a(
+  'Volver al principio',
+  href = '#principio',
+  style = css(
+    font_size = '18px',
+    font_family = 'Playfair Display',
+    color = 'white',
+    background = '#003049',
+    display = 'inline-block',
+    padding = '10px',
+    border_radius = '5px',
+    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
+  )
+)
+```

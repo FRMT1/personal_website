@@ -1,0 +1,230 @@
+---
+title: "Manipulación de datos"
+author: Félix Millán
+date: 2025-12-2
+categories: ["Tidyverse","dplyr","Manipulación de datos","Transformación de datos"]
+description: "La manipulación y transformación de datos es una actividad medular en la ciencia de datos. En esta publicación se muestra su abordaje mediante la librería dplyr."
+code-fold: true
+format: 
+  html:
+    css: styles.css
+---
+
+```{r include=FALSE, message=FALSE, warning=FALSE}
+library(fontawesome)
+```
+
+## Introducción
+
+Un atributo notable del lenguaje de programación `r fa(name = "r-project", fill = "steelblue")`, es poder disponer del gran volumen de bibliotecas especializadas en distintos aspectos del análisis de datos. En tal sentido, existe un conjunto de bibliotecas conocidas como el *Tidyverse*, sumamente útiles para la manipulación, visualización y modelado de datos. En esta publicación, veremos las principlaes funciones de importancia de una de las principales bibliotecas: *dplyr*.
+
+```{r, echo = FALSE, fig.align='center'}
+knitr::include_graphics("imagenes/dplyr.png")
+```
+
+Debemos primero instalar la biblioteca y luego llamarla, escribiendo el siguiente código en la consola de R:
+
+-   **install.packages("dplyr")**
+-   **library(dplyr)**
+
+Y ahora sí, estamos listos para explorar las principales funciones de esta biblioteca.
+
+## Principales funciones de dplyr
+
+A fin de trabajar con las principales funciones de la biblioteca, utilizaremos una biblioteca de datos sobre vuelos aéreos de la ciudad de Nueva York -entre muchas-, que viene incluida con la instalación de R. Para llamar la base de datos antes mencionada, escribimos:
+
+-   **library(nycflights13)**
+
+En caso de no venir instalada por defecto, la debemos instalar al igual que se hizo con dplyr.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(dplyr)
+library(nycflights13)
+```
+
+La biblioteca **nycflights13** está conformada por cinco tablas de datos: *airlines*, *airports*, *flights*, *planes* y *weather*. Observemos los primeros datos de la tabla *planes* con la función **head**.
+
+```{r}
+head(planes)
+```
+
+Esta función nos permite visualizar los primeros 6 datos de un total de 9 columnas que componen la tabla. Si se quiere obtener una información más detallada de las variables y número de observaciones que componen la tabla, podemos utilizar la función **str**:
+
+```{r}
+str(planes)
+```
+
+Vemos al inicio que la tabla *planes* está conformada por 3322 observaciones (filas), en relación a 9 variables (columnas), entre las que tenemos: ID del ala trasera (tailnum), año, tipo de motor, fabricante, modelo, motores, asientos y velocidad. Esta primera visualización también nos aporta información sobre el tipo de variables. Por ejemplo, el ID del ala trasera es una *variable caracter*, en tanto que el numero de asientos es una *variable numérica*.
+
+### Select
+
+Esta función permite seleccionar variables específicas de una tabla de datos. Supongamos que a partir de la tabla original, queremos formar una nueva tabla con las variables: *tailnum*, *manufacturer* y *seats*
+
+```{r}
+select(planes, tailnum, manufacturer, seats)
+```
+
+El código anterior, aunque logró el objetivo, no se corresponde con la gramática utilizada en *dplyr*; para ello, se utiliza el operador **%\>%**, que se lee **entonces** y que constituye una especie de tubería (*pipe*) que garantiza el flujo de código en la gramática de la biblioteca. Reescribiendo el código anterior tenemos:
+
+```{r}
+aviones <- planes %>%
+  select(tailnum, manufacturer, seats)
+head(aviones)
+```
+
+### Filter
+
+La función **filter**, permite filtrar las filas de la tabla en base a algún criterio específico. Supongamos que estamos interesados en los datos del fabricante *AIRBUS INDUSTRIE*:
+
+```{r}
+manufacturer <- aviones %>%
+  filter(manufacturer == "AIRBUS INDUSTRIE")
+head(manufacturer)
+```
+
+Si deseamos filtrar los datos de manera de seleccionar de la tabla original, el número de cola, fabricante y asientos; y específicamente aquellos aviones con más de 200 asientos del fabricante AIRBUS INDUSTRIE tenemos:
+
+```{r}
+aviones <- planes %>%
+  select(tailnum, manufacturer, seats) %>%
+  filter(manufacturer == "AIRBUS INDUSTRIE" & seats > 200)
+head(aviones)
+```
+
+Noten el uso del caracter **&** para establecer la condición AND. De igual forma, el caracter **\|** se utiliza para la condición OR. Por ejemplo:
+
+```{r}
+aviones <- planes %>%
+  select(tailnum, manufacturer, seats) %>%
+  filter(manufacturer == "AIRBUS INDUSTRIE" | seats <= 200 )
+head(aviones)
+```
+
+Observen que al establecer la condición OR, el código ha incluido al fabricante EMBRAER porque produce aviones con menos de 200 asientos.
+
+### Between
+
+Esta función se utiliza en combinación con *filter* para seleccionar las filas que se encuentren entre dos condiciones límite. Por ejemplo, si queremos seleccionar los aviones que tengan entre 50 y 100 asientos:
+
+```{r}
+aviones <- planes %>%
+  select(tailnum, manufacturer, seats) %>%
+  filter(between(seats,50,100))
+str(aviones)
+```
+
+Observen que hay 698 aviones que cumplen con la condición establecida.
+
+### Slice
+
+Esta función devuelve filas específicas de la tabla de datos. Por ejemplo, supongamos que estamos interesados en las dos primeras filas de la tabla original de datos
+
+```{r}
+aviones <- planes %>%
+  select(tailnum, manufacturer, seats) %>%
+  slice(1,2)
+aviones
+```
+
+### Mutate
+
+Esta es una función de gran utilidad, ya que nos permite incorporar nuevas variables o modificar variables existentes en una tabla de datos. Consideremos una tabla con el peso (kg) y talla (m) de cinco personas:
+
+```{r}
+peso <- c(65,78,86,75,81)
+talla <- c(1.70,1.72,1.67,1.80,1.78)
+datos <- data.frame(peso,talla)
+datos
+```
+
+Supongamos que queremos incorporar una tercera variable, el índice de masa corporal (IMC):
+
+```{r}
+datos <- datos %>%
+  mutate(IMC = peso/(talla)^2)
+datos
+```
+
+Aprovechando la nueva tabla que se ha generado, utilizaremos la función **mutate** en conjunto con la función **if_else** de dplyr:
+
+```{r}
+resultado <- datos %>%
+  mutate(DX = if_else(IMC > 25,"sobrepeso","normopeso"))
+resultado
+```
+
+### Arrange
+
+Esta función permite ordenar la tabla de datos en función de una variable. Por ejemplo, apartir de la tabla original, construyamos una tabla con las variables: *tailnum*, *year* y *model* y oredenemos la nueva tabla en función del año
+
+```{r}
+aviones <- planes %>%
+  select(year, tailnum, model) %>%
+  arrange(year)
+head(aviones)
+```
+
+Y si lo requerimos en orden descendente:
+
+```{r}
+aviones <- planes %>%
+  select(year, tailnum, model) %>%
+  arrange(desc(year))
+head(aviones)
+```
+
+### Group_by y summarise
+
+Estas son, quizá, las funciones más importantes de la biblioteca dplyr, ya que nos permiten ejecutar operaciones en un sub-grupo del *data frame* sin necesidad de extraer el sub-grupo. A partir de *planes*, agruparemos los datos por fabricante y calcularemos el promedio de asientos en los aviones de cada uno:
+
+```{r}
+df <- planes %>%
+  group_by(manufacturer) %>%
+  summarise(Media = mean(seats))
+head(df)
+```
+
+Si retomamos el *dataframe* de peso y talla que elaboramos más arriba, añadimos otros datos e incorporamos la variable sexo:
+
+```{r}
+sexo <- c("Mujer","Hombre","Hombre","Mujer", "Mujer","Hombre","Mujer")
+peso <- c(65,78,86,71,81,90,63.2)
+talla <- c(1.70,1.72,1.67,1.80,1.78,1.75,1.70)
+datos <- data.frame(sexo, talla, peso)
+datos
+```
+
+Podríamos agrupar los datos por sexo y calcular la media y la mediana en cada grupo:
+
+```{r}
+datos %>%
+  group_by(sexo)%>%
+  summarise(Media = mean(peso), Mediana = median(peso))
+```
+
+::: {style="text-align: center;"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/znUgfZ-JdbQ?si=RIVHwCeBhjLN49YX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+:::
+
+```{r echo=FALSE}
+library(htmltools)
+
+a(
+  'Volver al principio',
+  href = '#principio',
+  style = css(
+    font_size = '18px',
+    font_family = 'Playfair Display',
+    color = 'white',
+    background = '#003049',
+    display = 'inline-block',
+    padding = '10px',
+    border_radius = '5px',
+    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
+  )
+)
+```
+
+<br>

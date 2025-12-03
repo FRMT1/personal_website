@@ -1,0 +1,6 @@
+---
+title: "Control de calidad"
+listing: 
+  contents: control
+  categories: true
+---

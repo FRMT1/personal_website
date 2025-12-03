@@ -1,0 +1,199 @@
+---
+title: "Bucles y condicionales"
+author: Félix Millán
+date: 2025-12-02
+categories: ["Bucles","Condicionales"]
+description: "Se abordan los principales blucles o loops utilizados en programación y se muestra el uso práctico de condicionales en R."
+code-fold: true
+toc: true
+toc-location: left
+format: 
+  html:
+    css: styles.css
+---
+
+## ¿Qué son los bucles (*loops*)?
+
+Los bucles o loops son una declaración (*statement*) que se ejecuta de forma iterativa sobre una secuencia de items. Así, en lugar de repetir líneas de código para cada item de la secuencia, el bucle realiza una ejecución automática sobre todos los items hasta que se satisface la totalidad.
+
+```{r {r, echo = FALSE, fig.align='center'}
+knitr::include_graphics("imagenes/loops.png")
+
+```
+
+## Bucle **for**
+
+```{r}
+for(i in 1:20){
+  print(i)
+}
+```
+
+```{r}
+for(i in 1:20){
+  y = i+1
+  print(y)
+}
+```
+
+```{r}
+x <- c(3,4,5,6,7,8,9,10,20)
+for(i in x){
+  y = sqrt(i)
+  print(y)
+}
+```
+
+```{r}
+año <- c('Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto',
+         'Septiembre','Octubre','Noviembre','Diciembre')
+for(mes in año){
+  print(mes)
+}
+```
+
+## Bucle **for** para una lista
+
+```{r}
+mi_lista <- c('banana','manzana','lechosa','naranja','piña')
+for(i in seq_along(mi_lista)){
+  alimento <- mi_lista[[i]]
+  print(paste('El alimento de mi lista de compra es:', alimento))
+}
+```
+
+## Bucle **for** para una tabla de datos (*dataframe*)
+
+```{r}
+df <- data.frame(
+  nombre = c('María','José','Linda','Rafael'),
+  Edad = c(24,27,23,29),
+  Sexo = c('F','M','F','M')) 
+print(df) 
+for(i in seq_len(nrow(df))){
+  sujeto <- df[i, ]
+  print(paste('El sujeto seleccionado es:', toString(sujeto))) 
+}
+```
+
+## Bucle **while**
+
+Este tipo de bucle se utiliza para repetir una instrucción hasta que se satisfaga cierta condición, momento en el cual el proceso automático se detiene.
+
+```{r}
+i <- 2
+while(i < 10){
+  i = i + 2
+  print(i)
+}
+```
+
+## Declaración **break**
+
+La introducción de la declaración *break*, hace que un bucle *while* finalice, aun cuando no se satisfaga la condición inicial. Tomemos el ejemplo anterior:
+
+```{r}
+i <- 2
+while(i < 10){
+  print(i) 
+  i = i + 2
+  if(i == 6){
+    break
+  }
+}
+```
+
+## Bucle **repeat**
+
+En este caso es más importante que nunca la declaración *break*, ya que de lo contrario, el bucle seguirá iterando infinitamente.
+
+```{r}
+i <- 0
+repeat{
+  print(i)
+  i <- i + 1
+  if(i == 10){
+    break
+  }
+}
+print('El proceso ha finalizado')
+```
+
+```{r}
+i <- 0
+repeat{
+  print('¡Hola mundo!')
+  i <- i + 1
+  if(i == 7){
+    break
+  }
+}
+```
+
+## Condicionales **if, else**
+
+Generalmente se utiliza el condicional, para la toma de decisiones. Veamos algunos ejemplos
+
+```{r}
+a <- 57
+b <- 89
+
+if(a < b)
+{
+  print('Si a < b, la diferencia (a - b) es un número negativo')
+  resta <- a - b
+  print(paste('La diferencia es:', resta ))
+} else{
+  resta <- a - b
+  print('Si a > b, la diferencia (a - b) es un número positivo')
+  print(paste('La diferencia es:', resta))
+}
+```
+
+## Programando una calculadora de índice de masa corporal (IMC)
+
+```{r}
+peso_kg <- 70
+talla_metros <- 1.72
+
+IMC <- peso_kg/(talla_metros)**2
+print(paste('Su índice de masa corporal es:', IMC))
+if(IMC < 18)
+{
+  print('Usted tiene muy bajo peso para su talla')
+} else if (IMC >= 18 & IMC <= 24.9){
+  print('Su peso es adecuado para su talla')
+} else if (IMC >= 25 & IMC <= 29.9){
+  print('Usted tiene sobrepeso')
+} else{
+  print('Usted tiene obesidad')
+}
+```
+
+```{=html}
+<div style="text-align: center";> 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/twalP88xXFc?si=1vdbZCNTbAKfPefY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</div>
+```
+
+<br>
+
+```{r echo=FALSE}
+library(htmltools)
+
+a(
+  'Volver al principio',
+  href = '#principio',
+  style = css(
+    font_size = '18px',
+    font_family = 'Playfair Display',
+    color = 'white',
+    background = '#003049',
+    display = 'inline-block',
+    padding = '10px',
+    border_radius = '5px',
+    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
+  )
+)
+```

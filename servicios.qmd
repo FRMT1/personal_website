@@ -1,0 +1,70 @@
+---
+title: "Servicios de capacitación y consultoría"
+---
+
+```{r include=FALSE, warning=FALSE, message=FALSE}
+library(fontawesome)
+```
+
+La formación permanente es indispensable para el desarrollo profesional personal y para el crecimiento de cualquier empresa. Por ello, me he propuesto ofrecer a personas naturales y jurídicas, mi experiencia profesional para la capacitación y asesoría, en línea y/o en la empresa, sobre diversos tópicos de la ciencia y tecnología de alimentos, la estadística aplicada a la industria y el aprendizaje automático.
+
+A continuación se presentan los principales servicios ofrecidos:
+
+# Educación y consultoría {#principio}
+
+## `r fa(name = "r-project", fill = "steelblue")` Desarrollo de sitios web personales con R
+
+Este curso tiene como objetivo la capacitación para el desarrollo de páginas web personales, mediante el lenguaje de programación [R](https://www.r-project.org/). El participante, aprenderá a integrar el ambiente de desarrollo integrado (IDE por sus siglas en inglés) [Rstudio](https://posit.co/download/rstudio-desktop/), con tecnologías como [Git](https://git-scm.com/) para el control de versiones y la creación del repositorio y hospedaje de su página web en [Github](https://github.com/) y/o [Netlify](https://www.netlify.com/). El curso será dictado en su totalidad, a través de la plataforma *Thinkific* y el material estará disponible hasta la culminación del curso. Está dirigido a todas aquellas personas que deseen crear una página web personal o profesional y no posean conocimientos avanzados de programación.
+
+## `r fa(name = "industry", fill = "steelblue")` Estadística básica para la empresa
+
+Este curso está dirigido a profesionales, estudiantes o empresas, que estén interesadas en una primera aproximación a la utilización e interpretación de métodos estadísticos en el entorno industrial. En tal sentido, el participante aprenderá a interpretar los conceptos de población y muestra en los procesos de producción y a partir de allí, podrá plantear hipótesis y estimar parámetros de proceso para la toma de decisiones, estableciendo el balance entre el riesgo del fabricante y el riesgo del consumidor.
+
+## `r fa(name = "desktop", fill = "steelblue")` Diseño estadístico de experimentos (*DoE*) para la investigación y desarrollo (I&D)
+
+Este curso tiene como finalidad, capacitar a los participantes en las metodologías y procedimientos fundamentales para el diseño y análisis de experimentos en la industria, y su aplicación en el desarrollo de productos y optimización de procesos; que conduzca a la toma de decisiones, a partir de una base científica. Se abordarán temas como el diseño de bloques completos (*RCBD*), diseños factoriales, técnica de confusión, factoriales fraccionarios y metodología de superficie de respuesta. Una vez comprendidos los fundamentos, el participante aprenderá a escribir el código de programación en R correspondiente para cada caso. Este curso está dirigido a profesionales en el área de I&D, profesionales en el área de producción y calidad, estudiantes universitarios o empresas que deseen una capacitación en el área.
+
+-   *Se recomienda tomar previamente el curso de estadística básica para la empresa*.
+
+## `r fa(name = "industry", fill = "steelblue")` Cálculo de vida útil de alimentos
+
+Se desarrollará el concepto e importancia de la estabilidad y vida útil de los alimentos y se abordarán los principales mecanismos físicos, bioquímicos y microbiológicos que la determinan. Una vez comprendidos estos fundamentos, el participante aprenderá los criterios y el diseño de pruebas aceleradas, para identificar y modelar las principales cinéticas de deterioro en un alimento, y su relación con las temperaturas de almacenamiento, para predecir la vida útil de un producto. Los cálculos se desarrollarán con el lenguaje de programación R. Este curso está dirigido a todas aquellas personas interesadas en conocer cómo se establece la vida útil de un alimento, profesionales, estudiantes universitarios y empresas interesadas en el tema.
+
+## `r fa(name = "industry", fill = "steelblue")` Cálculo de procesos de esterilidad comercial
+
+El objetivo de este curso es establecer las bases microbiológicas y de termorresistencia microbiana, así como la comprensión de los mecanismos de transferencia de calor, para la evaluación y diseño de procesos de esterilización comercial de alimentos. El participante aprenderá el significado científico-técnico del concepto de termorresistencia y su importancia, y establecerá los criterios para el procesamiento térmico de un alimento enlatado, lo cual, en conjunto con la comprensión de los mecanismos de penetración de calor, le permitirá evaluar y diseñar procesos térmicos de esterilización comercial en la industria de alimentos. Los calculos se desarrollarán con el lenguaje de programación R. Este curso está dirigido a profesionales, estudiantes universitarios o empresas que requieran conocer y establecer las bases para el procesamiento térmico de alimentos.
+
+## `r fa(name = "industry", fill = "steelblue")` Control estadístico de la calidad
+
+Curso que tiene como objetivo, estudiar y comprender la etiología de la variación asociada a los procesos industriales y su impacto en la calidad de los productos y la satisfacción del consumidor, así como el fundamento y aplicación de las principales técnicas del control moderno de la calidad: gráficos de control, histograma y gráfico de probabilidad normal, análisis de capacidad de proceso, diagrama de Pareto, hojas de registro y planes de muestreo, las cuales se desarrollarán mediante el lenguaje de programación R. Está dirigido a profesionales que trabajen en las áreas de calidad y producción, profesionales interesados en el tema, estudiantes universitarios y empresas procesadoras de bienes y/o servicios.
+
+-   *Se recomienda tomar previamente el curso de estadística básica para la empresa*.
+
+## `r fa(name = "desktop", fill = "steelblue")` Aprendizaje automático (*machine learning*)
+
+Este curso tiene como objetivo la comprensión de los fundamentos que rigen el aprendizaje automático y la aplicación de algoritmos de aprendizaje supervisado y no supervisado en problemas de clasificación, regresión y agrupación en datos rectangulares (tablas). El participante adquirirá una comprensión práctica de los principios y aplicación de los principales algoritmos de aprendizaje automático, mediante su aplicación en el lenguaje de programación R y la aplicación de librerías como *neuralnet*, *keras y tensorflow, H2O, rpart* y *kohonen, entre otras*.
+
+*Cualquier requerimiento adicional tanto en cursos como en asesorías, podrá establecerse de mutuo acuerdo con la persona o empresa.*
+
+<br>
+
+```{r echo=FALSE}
+library(htmltools)
+
+a(
+  'Volver al principio',
+  href = '#principio',
+  style = css(
+    font_size = '18px',
+    font_family = 'Playfair Display',
+    color = 'white',
+    background = '#003049',
+    display = 'inline-block',
+    padding = '10px',
+    border_radius = '5px',
+    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
+  )
+)
+```
+
+<br>

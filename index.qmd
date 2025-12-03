@@ -1,0 +1,25 @@
+---
+title: "Félix Millán"
+about:
+  template: trestles
+  image: imagenes/perfil2.jpg
+  links: 
+    - icon: github
+      href: http://github.com/FRMT1
+      target: "_blank"
+    - icon: linkedin
+      href: https://linkedin.com/in/felix-r-millan-t-3013604a
+      target: "_blank"
+    - icon: youtube
+      href: https://youtube.com/channel/UCU24E5AJzW1-inWqhp57IcA
+      target: "_blank"
+    - icon: instagram
+      href:  https://instagram.com/feramitru
+      target: "_blank"
+---
+
+Hola, soy consultor en el área de ciencia y tecnología de Alimentos, y en la toma de decisiones a partir del análisis de datos. Antes de eso, desarrollé una carrera de 26 años en la Universidad Simón Bolívar, de la cual soy profesor titular jubilado.
+
+Mi experiencia, que pongo al servicio a través de cursos y asesorías en línea o directamente en la empresa, se centra en áreas como el procesamiento térmico de alimentos, determinación de vida útil y métodos estadísticos y de aprendizaje automático, orientados a la calidad y a la optimización de productos y procesos en la industria de alimentos y afines.
+
+Si deseas contactarme, escribe a proffelixmillan\@gmail.com.

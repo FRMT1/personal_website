@@ -1,0 +1,46 @@
+project:
+  type: website
+  output-dir: docs 
+
+website:
+  title: "Félix Millán"
+  navbar:
+    left:
+      - href: index.qmd
+        text: " "
+        icon: house-door-fill
+      - href: cursos.qmd
+        text: Cursos
+      - href: servicios.qmd
+        text: Servicios
+      - text: "Tutoriales"
+        menu: 
+          - text: "Fundamentos de R"
+            href: fundamentos.qmd
+          - text: "Control de calidad"
+            href: control.qmd
+          - text: "Diseño experimental"
+            href: diseño.qmd
+          - text: "Aprendizaje automático"
+            href: aprendizaje.qmd
+      - href: blog.qmd
+        text: Blog
+      - href: cv.qmd
+        text: CV
+
+
+format:
+  html:
+    lang: es 
+    theme:
+      light: darkly 
+      dark: superhero
+    highlight-style: tomorrow 
+    css: styles.css
+    toc: true
+    toc-depth: 3 
+    toc-title: "Contenido"
+    toc-location: left
+
+editor: visual
+

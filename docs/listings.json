@@ -1,0 +1,30 @@
+[
+  {
+    "listing": "/fundamentos.html",
+    "items": [
+      "/fundamentos/bucles_y_condicionales.html",
+      "/fundamentos/estructuras_de_datos.html",
+      "/fundamentos/manipulacion_de_datos.html"
+    ]
+  },
+  {
+    "listing": "/aprendizaje.html",
+    "items": []
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/magnesio.html",
+      "/blog/mucina.html",
+      "/blog/desechos.html"
+    ]
+  },
+  {
+    "listing": "/control.html",
+    "items": []
+  },
+  {
+    "listing": "/diseño.html",
+    "items": []
+  }
+]

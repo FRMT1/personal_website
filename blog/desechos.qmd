@@ -1,0 +1,102 @@
+---
+title: "Uso de desechos vegetales"
+author: Félix Millán
+date: 2025-12-03
+categories: ["Desechos vegetales","Compuestos funcionales"]
+description: "Se destaca la importancia de los desechos vegetales como fuente de nutrientes en la industria"
+format: 
+  html: 
+    css: styles.css
+---
+
+
+
+## Perspectiva general {#principio}
+
+Según datos de la Organización de las Naciones Unidas para la Agricultura y los Alimentos (FAO por sus siglas en inglés), se estima que para el año 2050 la población mundial alcance los 9 millardos de habitantes, lo cual se traducirá en un incremento del 70% en la demanda de alimentos. 
+
+El consumo de alimentos de origen vegetal es de principal importancia, alcanzando para el año 2019 la producción mundial de 846 millones de toneladas, con la subsiguiente generación de desechos vegetales (**DV**) tanto en el campo, como por parte de la industria procesadora de alimentos.
+
+Tradicionalmente, los DV se han utilizado en la formulación de alimentos para animales y como materia prima para la fabricación de abono. Sin embargo, dada su composición, poseen un gran potencial para ser utilizados en la suplementación y fortificación de alimentos con nutrientes y  compuestos bioactivos de interés en la fisiología humana. Se puede mencionar, como promedio:
+
+* 7-25% proteínas en base seca.
+* 7-53% de fibra dietaria
+* 25-27% de almidón
+* 14-25% de pectina
+
+Si se considera la tendencia a utilizar proteínas de origen vegetal a fin de disminuir el consumo de carne, el rol de la fibra dietaria en la modulación de la microbiota intestinal y su efecto en la salud del intestino y en el fortalecimiento del sistema inmunológico, además del aporte de fitoquímicos como los polifenosles, la utilización de los DV cobra cada día una mayor importancia en la salud humana y la potencial prevención de enfermedades degenerativas crónicas como el cáncer y la diabetes.
+
+## Cáscaras
+
+Las cáscaras representan entre el 11-50% de los DV generados por la industrtia. Su composición, en base seca, aporta:
+
+* 25% de almidón.
+* Polisacáridos distintos al almidón: 30%
+* Proteínas: 10-18%
+* Fibra dietaria: 15-45%
+
+Además de un apreciable contenido de carotenoides y polifenoles. El efecto sobre la salud humana de dichas moléculas tiene fundamento en diversos estudios. Por ejemplo, se ha asociado la ingesta de fibra dietaria proveniente de cáscaras de vegetales con la disminución del riesgo de problemas crónicos de salud como las patologías cardiacas, el sindrome metabólico, la constipación y el cáncer. Así mismo, se ha vinculado el efecto positivo del consumo de polifenoles provenientes de la cáscara de zanahorias en la inactivación de radicales libres y como factores anti tumorales y anti inflamatorios.
+
+Debido a la baja digestibilidad de las cáscaras vegetales, se ha probado la extracción de compuestos bioactivos mediante la utilización de solventes orgánicos: hexano, acetona y metanol. Esto, por supuesto, tiene un impacto negativo en el ambiente y limita la aplicación de los productos extraídos en la formulación de alimentos. Sin embargo, más recientemente se ha tratado la extracción de diversos compuestos bioactivos mediante tratamiento enzimático y fermentación. Esto ha mejorado considerablemente el redimiento y la calidad de los extractos obtenidos, al mismo tiempo que se produce un bajo impacto ambiental.
+
+## Hojas
+
+Las hojas representan entre 20-34% de los DV generados por la industria. Su aporte nutricional en base seca, oscila entre:
+
+* Carbohidratos: 46-71%
+* Proteínas: 18-25%
+* Fibra dietaria: 7-36%
+* Lípidos: 2-5%
+
+Además de compuestos bioactivos como: ácidos fenólicos, carotenoides, clorofila, betalainas y diversas vitaminas. Por ejemplo, las hojas de las zanahorias muestran un contenido de compuestos fenólicos diez veces mayor al encontrado en la propia raíz. Las hojas de la remolacha son ricas en aminoácidos, encontrándose todos los aminoácidos esenciales; lo cual la hace muy conveniente como fuente proteica en la formulación de alimentos.
+
+Sin embargo, la seguridad asociada al uso directo de esta hojas en la alimentación humana es, en muchas ocasiones, incierta, ya que pueden ser vehículo de pesticidas y microorganismos patógenos que pongan en riesgo la salud del consumidor. Por lo tanto, el aseguramiento de la inocuidad de las hojas es fundamental antes de valorar su uso en la alimentación humana. La ausencia de pesticidas de naturaleza química no polar es primordial, así como el control de patógenos como *Listeria* spp., *Salmonella enterica* y *Escherichia coli*.
+
+Otro factor a considerar en el caso de las hojas y que limita su uso directo en la alimentación, es la presencia de factores antinutricionales como el ácido fítico, el cual disminuye la biodisponibilidad de los micronutrientes de la dieta.
+
+El verdadero valor de los DV en la formulación de alimentos, se obtiene luego de su pre-tratamiento y la extracción de diversos compuestos de interés con diversas tecnologías.
+
+## Tratamientos de extracción
+
+Los tratamientos de extracción convencionales más utilizados se basan en el uso de agua, ácidos y álcalis. Por ejemplo, se ha probado el escaldado (*blanching*) en agua a 90°C por 1 minuto para la extracción de compuestos bioactivos a partir de la cáscara de zanahoria, lográndose un elevado rendimiento en la extracción de proteínas y pectina, pero una baja extracción de fibra dietaria, compuestos fenólicos y actividad antioxidante en comparación con las cáscaras no escaldadas.
+
+Los procedimientos de extracción con agua han sido utilizados para la obtención de los hidrocoloides pectina-carotenoides, obteniéndose buenos rendimientos. Así mismo, el aceite de linaza también se ha utilizado para la extracción de carotenoides como emulsiones, las cuales pueden tener un potencial uso como colorantes naturales con valor añadido.
+
+Otras tecnologías de extracción involucran el uso de enzimas, microondas, ultrasoido y la extracción supercrítica.
+
+La utilización de mezclas de enzimas como: poligalacturonasas, pectina-metil-esterasas, celulasa y hemi-celulasa, ha sido aplicada en hojas de remolacha para la producción de concentrados proteicos vegetales, lográndose un rendimiento de hasta 79% en la extracción de proteínas cuando la mezcla de enzimas es utilizada durante 81 minutos a una temperatura de 54°C
+
+Los tratamientos de extracción también pueden combinarse a fin de optimizar la extracción de compuestos de interés, los cuales, además de representar un valor agregado desde la perspectiva de la salud humana, también pueden ser utilizados para mejorar atributos sensoriales como color y textura en diversidad de productos.
+
+La siguiente imagen, muestra de manera esquemática los principales DV de interés, los métodos de extracción aplicados hasta el momento, sus posibles aplicaciones en el desarrollo de alimentos y sus potenciales efectos en la salud humana.
+
+```{r echo=FALSE, fig.align='center', out.width=1300}
+knitr::include_graphics("imagenes/DV.png")
+```
+
+## Lectura complementaria
+
+* Zhou Y., Tian Y., Yang B. Root vegetable side streams as sources of        functional ingredients for food nutraceutical and pharmaceutical           applications: the currect status and future prospects. *Trends in Food    Science & Technology* (2023). Vol. 137. Pp. 1-16
+
+<br>
+
+```{r echo=FALSE}
+library(htmltools)
+
+a(
+  'Volver al principio',
+  href = '#principio',
+  style = css(
+    font_size = '18px',
+    font_family = 'Playfair Display',
+    color = 'white',
+    background = '#003049',
+    display = 'inline-block',
+    padding = '10px',
+    border_radius = '5px',
+    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
+  )
+)
+```
+
+

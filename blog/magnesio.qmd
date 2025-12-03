@@ -1,0 +1,76 @@
+---
+title: "Magnesio y función cerebral"
+author: Félix Millán
+date: 2025-12-03
+categories: ["Magnesio","Función cognitiva","Cerebro","Sinapsis"]
+description: "Esta publicación aborda la importancia y fisiología del magnesio en las conexiones sinápticas y la plasticidad neuronal"
+format: 
+  html: 
+    css: styles.css
+---
+
+
+## Memoria y aprendizaje {#principio}
+
+La fortaleza de las conexiones sinápticas, está ampliamente asociada con la función cerebral de la memoria, y algunas investigaciones también la asocian con la capacidad de aprendizaje. Sin embargo, la habilidad cerebral para almacenar nueva información, parece estar correlacionada con la plasticidad de las conexiones neuronales y el número de  conexiones disponibles.
+
+Por lo tanto, debe existir un número crítico de conexiones para que tenga lugar las funciones cerebrales de memoria y aprendizaje. De hecho, en experimentos con animales se ha demostrado la correlación entre la disminución de conexiones neuronales y la disminución de la memoria asociada al envejecimiento.
+
+Si bien la edad es un factor irreversible, la dieta y los factores ambientales son factores susceptibles de modificación, que desempeñan un rol fundamental en el diseño de estrategias enfocadas hacia el modelado de la capacidad cognitiva del cerebro.
+
+## El Magnesio en la neuroquímica
+
+El Magnesio ($Mg^{2+}$) es el cuarto ión más abundante en el cuerpo humano y actúa como grupo prostético o cofactor en más de 300 reacciones enzimáticas, siendo esencial para el funcionamiento del sistema cardiovascular, la contracción muscular y el sistema nervioso.
+
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics("imagenes/Mg.png")
+```
+
+
+En el cerebro, una de las funciones fundamentales del $Mg^{2+}$, es la regulación de los receptores NMDA (NMDAR) localizados en las terminaciones sinápticas, donde desempeñan su función como moduladores del potencial excitatorio postsináptico. Estos receptores son **voltaje-dependientes** y el $Mg^{2+}$ controla su apertura, lo cual resulta esencial para la plasticidad neuronal. Los estudios *in vitro* demuestran que el $Mg^{2+}$ es un **regulador positivo** de la plasticidad neuronal; es decir, el incremento en la concentración de Magnesio en el fluido extracelular $[Mg^{2+}]_o$, dentro de un rango fisiológico, se relaciona con el aumento de la plasticidad neuronal en cultivos neuronales provenientes del hipocampo.
+
+Entiéndase por plasticidad neuronal o neuroplasticidad, la capacidad del cerebro para adaptarse a los cambios del entorno.
+
+La concentración de $Mg^{2+}$ es mayor en el fluido cerebro espinal que en plasma, y este gradiente se mantiene por un proceso de transporte activo que regula la cantidad de Magnesio en el cerebro. De hecho, la elevación de la concentración de $Mg^{2+}$ en plasma a través del suministro de $MgSo_4$ por vía endovenosa, solo ha logrado incrementar la concentración de magnesio en el cerebro entre 10%-19%.
+
+## L-Treonato de Magnesio (MgT)
+
+El MgT es una estructura química que aumenta la biodisponibilidad del Magnesio, pudiendo, de esa manera, incrementar la concentración de $Mg^{2+}$ en el cerebro, mediante la suplementación oral, tal como se ha demostrado en animales de experimentación; en los cuales, el tratamiento crónico con MgT ha permitido la formación de nuevas conexiones neuronales en el corto tiempo y su fortalecimiento en el largo plazo. Ambos, procesos de suma importancia para la memoria y el aprendizaje.
+
+```{r echo=FALSE, fig.align='center'}
+knitr::include_graphics("imagenes/treonato_magnesio.png")
+```
+
+
+A nivel celular, la elevación de los niveles de $Mg^{2+}$ en el cerebro, secundarios a la administración crónica de MgT, se relaciona con la reconfiguración de las redes sinápticas en animales, pasando de pocas conexiones con alta probabilidad de desconexión, a numerosas conexiones de baja probabilidad de desconexión.
+
+Puede especularse que estas modificaciones  en la neuroquímica a partir de la dieta y la suplementación oral con MgT, pudieran tener un efecto positivo en las funciones cerebrales de la memoria y el aprendizaje; aunque se requiere más investigación al respecto.
+
+A través de la dieta, las principales fuentes de $Mg^{2+}$ son los cereales fortificados, legumbres, vegetales de hojas verdes como la espinaca, la leche y el yogurt. Las cantidades recomendadas por día, en miligramos (mg), son: 310-320 mg en mujeres y 400-420 mg en hombres. de acuerdo a las [*Recommended Dietary Allowanses (RDA)*](https://search.usa.gov/search?affiliate=nih-ods&query=magnesium)
+
+# Lectura complementaria
+
+* Inna S., Nashat A., Long-Jun W., Chao H., Ling Z., Bo L., Xiang Z., Arvind G., Ming-Gao Z., Min Z., Susumo T., Guosong L. Enhancement of Learning and Memory by Elevating Brain Magnesium. *Neuron* (2010). N°65. Pp., 165-177.
+
+<br>
+
+```{r echo=FALSE}
+library(htmltools)
+
+a(
+  'Volver al principio',
+  href = '#principio',
+  style = css(
+    font_size = '18px',
+    font_family = 'Playfair Display',
+    color = 'white',
+    background = '#003049',
+    display = 'inline-block',
+    padding = '10px',
+    border_radius = '5px',
+    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
+  )
+)
+```
+
+
