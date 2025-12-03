@@ -9,7 +9,7 @@ format:
     css: styles.css
 ---
 
-## Mucina {#principio}
+## Mucina
 
 La *Mucina* es la secreción mucosa producida por las células *Globet* del epitelio intestinal y el estómago, así como por las glándulas salivales. Está conformada principalmente por glucoproteínas que poseen en su estructura molecular *O*-Glucanos. Estos son polísacáridos ramificados compuestos principalmente por *N*-Acetilglucosamina, *N*-acetilgalactosamina (GlcNAc), galactosa y restos de fucosa, ácido siálico y carbohidratos azufrados.
 
@@ -39,13 +39,13 @@ knitr::include_graphics("imagenes/butirato.png")
 
 La importancia de estos cambios en el microbioma intestinal, inducidos por periodos intermitentes de ayuno, radica en la producción de SCFAs y su influencia en la actividad inmunológica del cuerpo humano, tanto en la preservación de la inmunidad intestinal como en la participación en el eje intestino-cerebro, como agente neuroquímico involucrado en los mecanismos de regulación del apetito. Además de contribuir a regular la actividad celular de los Linfocitos T, los ácidos grasos de cadena corta y especialmente el Butirato, aceleran el metabolismo de los Linfocitos B y regulan la expresión genética que promueve la diferenciación de estas células.
 
-::: {style="style"}
-<div style="text-align: center;">
+:::: {style="style"}
+::: {style="text-align: center;"}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UY_kRJqpUWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UY_kRJqpUWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-</div>
+</iframe>
 :::
+::::
 
 ## Lectura complementaria
 
@@ -56,22 +56,3 @@ La importancia de estos cambios en el microbioma intestinal, inducidos por perio
 -   Su J., Wang Y., Zhang X., Ma M., Xie Z., Pan Q., Ma Z., Peppelenbosch M.P. Remodeling of the gut microbiome during Ramadam-associated intermittent fasting. *American Journal of Clinical Nutrition* (2021);113:1332-1342.
 
 <br>
-
-```{r echo=FALSE}
-library(htmltools)
-
-a(
-  'Volver al principio',
-  href = '#principio',
-  style = css(
-    font_size = '18px',
-    font_family = 'Playfair Display',
-    color = 'white',
-    background = '#003049',
-    display = 'inline-block',
-    padding = '10px',
-    border_radius = '5px',
-    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
-  )
-)
-```

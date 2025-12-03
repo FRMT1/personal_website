@@ -9,20 +9,18 @@ format:
     css: styles.css
 ---
 
+## Perspectiva general
 
-
-## Perspectiva general {#principio}
-
-Según datos de la Organización de las Naciones Unidas para la Agricultura y los Alimentos (FAO por sus siglas en inglés), se estima que para el año 2050 la población mundial alcance los 9 millardos de habitantes, lo cual se traducirá en un incremento del 70% en la demanda de alimentos. 
+Según datos de la Organización de las Naciones Unidas para la Agricultura y los Alimentos (FAO por sus siglas en inglés), se estima que para el año 2050 la población mundial alcance los 9 millardos de habitantes, lo cual se traducirá en un incremento del 70% en la demanda de alimentos.
 
 El consumo de alimentos de origen vegetal es de principal importancia, alcanzando para el año 2019 la producción mundial de 846 millones de toneladas, con la subsiguiente generación de desechos vegetales (**DV**) tanto en el campo, como por parte de la industria procesadora de alimentos.
 
-Tradicionalmente, los DV se han utilizado en la formulación de alimentos para animales y como materia prima para la fabricación de abono. Sin embargo, dada su composición, poseen un gran potencial para ser utilizados en la suplementación y fortificación de alimentos con nutrientes y  compuestos bioactivos de interés en la fisiología humana. Se puede mencionar, como promedio:
+Tradicionalmente, los DV se han utilizado en la formulación de alimentos para animales y como materia prima para la fabricación de abono. Sin embargo, dada su composición, poseen un gran potencial para ser utilizados en la suplementación y fortificación de alimentos con nutrientes y compuestos bioactivos de interés en la fisiología humana. Se puede mencionar, como promedio:
 
-* 7-25% proteínas en base seca.
-* 7-53% de fibra dietaria
-* 25-27% de almidón
-* 14-25% de pectina
+-   7-25% proteínas en base seca.
+-   7-53% de fibra dietaria
+-   25-27% de almidón
+-   14-25% de pectina
 
 Si se considera la tendencia a utilizar proteínas de origen vegetal a fin de disminuir el consumo de carne, el rol de la fibra dietaria en la modulación de la microbiota intestinal y su efecto en la salud del intestino y en el fortalecimiento del sistema inmunológico, además del aporte de fitoquímicos como los polifenosles, la utilización de los DV cobra cada día una mayor importancia en la salud humana y la potencial prevención de enfermedades degenerativas crónicas como el cáncer y la diabetes.
 
@@ -30,10 +28,10 @@ Si se considera la tendencia a utilizar proteínas de origen vegetal a fin de di
 
 Las cáscaras representan entre el 11-50% de los DV generados por la industrtia. Su composición, en base seca, aporta:
 
-* 25% de almidón.
-* Polisacáridos distintos al almidón: 30%
-* Proteínas: 10-18%
-* Fibra dietaria: 15-45%
+-   25% de almidón.
+-   Polisacáridos distintos al almidón: 30%
+-   Proteínas: 10-18%
+-   Fibra dietaria: 15-45%
 
 Además de un apreciable contenido de carotenoides y polifenoles. El efecto sobre la salud humana de dichas moléculas tiene fundamento en diversos estudios. Por ejemplo, se ha asociado la ingesta de fibra dietaria proveniente de cáscaras de vegetales con la disminución del riesgo de problemas crónicos de salud como las patologías cardiacas, el sindrome metabólico, la constipación y el cáncer. Así mismo, se ha vinculado el efecto positivo del consumo de polifenoles provenientes de la cáscara de zanahorias en la inactivación de radicales libres y como factores anti tumorales y anti inflamatorios.
 
@@ -43,10 +41,10 @@ Debido a la baja digestibilidad de las cáscaras vegetales, se ha probado la ext
 
 Las hojas representan entre 20-34% de los DV generados por la industria. Su aporte nutricional en base seca, oscila entre:
 
-* Carbohidratos: 46-71%
-* Proteínas: 18-25%
-* Fibra dietaria: 7-36%
-* Lípidos: 2-5%
+-   Carbohidratos: 46-71%
+-   Proteínas: 18-25%
+-   Fibra dietaria: 7-36%
+-   Lípidos: 2-5%
 
 Además de compuestos bioactivos como: ácidos fenólicos, carotenoides, clorofila, betalainas y diversas vitaminas. Por ejemplo, las hojas de las zanahorias muestran un contenido de compuestos fenólicos diez veces mayor al encontrado en la propia raíz. Las hojas de la remolacha son ricas en aminoácidos, encontrándose todos los aminoácidos esenciales; lo cual la hace muy conveniente como fuente proteica en la formulación de alimentos.
 
@@ -76,27 +74,6 @@ knitr::include_graphics("imagenes/DV.png")
 
 ## Lectura complementaria
 
-* Zhou Y., Tian Y., Yang B. Root vegetable side streams as sources of        functional ingredients for food nutraceutical and pharmaceutical           applications: the currect status and future prospects. *Trends in Food    Science & Technology* (2023). Vol. 137. Pp. 1-16
+-   Zhou Y., Tian Y., Yang B. Root vegetable side streams as sources of functional ingredients for food nutraceutical and pharmaceutical applications: the currect status and future prospects. *Trends in Food Science & Technology* (2023). Vol. 137. Pp. 1-16
 
 <br>
-
-```{r echo=FALSE}
-library(htmltools)
-
-a(
-  'Volver al principio',
-  href = '#principio',
-  style = css(
-    font_size = '18px',
-    font_family = 'Playfair Display',
-    color = 'white',
-    background = '#003049',
-    display = 'inline-block',
-    padding = '10px',
-    border_radius = '5px',
-    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
-  )
-)
-```
-
-

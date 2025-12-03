@@ -208,23 +208,4 @@ datos %>%
 </iframe>
 :::
 
-```{r echo=FALSE}
-library(htmltools)
-
-a(
-  'Volver al principio',
-  href = '#principio',
-  style = css(
-    font_size = '18px',
-    font_family = 'Playfair Display',
-    color = 'white',
-    background = '#003049',
-    display = 'inline-block',
-    padding = '10px',
-    border_radius = '5px',
-    box_shadow = '5px 5px 5px rgba(0,0,0,0.70)'
-  )
-)
-```
-
 <br>
