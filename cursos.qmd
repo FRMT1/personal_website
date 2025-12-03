@@ -4,6 +4,4 @@ title: "Cursos"
 
 ## ¡En construcción!
 
-
-En este momento no hay oferta de cursos. Pero pendiente, porque pronto se iniciará la oferta académica.
----
+## En este momento no hay oferta de cursos. Pero pendiente, porque pronto se iniciará la oferta académica.

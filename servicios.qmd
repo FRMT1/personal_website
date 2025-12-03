@@ -10,7 +10,7 @@ La formación permanente es indispensable para el desarrollo profesional persona
 
 A continuación se presentan los principales servicios ofrecidos:
 
-# Educación y consultoría {#principio}
+# Educación y consultoría
 
 ## `r fa(name = "r-project", fill = "steelblue")` Desarrollo de sitios web personales con R
 
