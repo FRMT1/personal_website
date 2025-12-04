@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Félix Millán"
+  page-footer: "Copyright 2025, Félix Millán"
   navbar:
     left:
       - href: index.qmd
@@ -31,10 +32,11 @@ website:
 
 format:
   html:
+    mainfont: serif   
     lang: es 
     theme:
-      light: darkly 
-      dark: superhero
+      light: superhero
+      dark: darkly
     highlight-style: tomorrow 
     css: styles.css
     toc: true
