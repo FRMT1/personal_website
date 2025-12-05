@@ -1,3 +1,21 @@
 ---
 title: "Curriculum vitae"
 ---
+
+Aquí puedes consultar mi *Curriculum vitae*:
+
+![Página 1 del CV](imagenes/cv-page1.jpg){#fig-pagina1 fig-cap="Página 1" fig-align="center"}
+
+![Página 2 del CV](imagenes/cv-page2.jpg){fig-cap="Página 1" fig-align="center"}
+
+![Página 3 del CV](imagenes/cv-page3.jpg){fig-cap="Página 1" fig-align="center"}
+
+![Página 4 del CV](imagenes/cv-page4.jpg){fig-cap="Página 1" fig-align="center"}
+
+![Página 5 del CV](imagenes/cv-page5.jpg){fig-cap="Página 1" fig-align="center"}
+
+![Página 6 del CV](imagenes/cv-page6.jpg){fig-cap="Página 1"}
+
+![Página 7 del CV](imagenes/cv-page7.jpg){fig-cap="Página 1"}
+
+![Página 8 del CV](imagenes/cv-page8.jpg){fig-cap="Página 1"}
